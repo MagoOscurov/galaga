@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaga Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="480" height="640"></canvas>
+        <div id="gameOver" class="hidden">
+            <h1>GAME OVER</h1>
+            <p>Puntuación: <span id="finalScore">0</span></p>
+            <button id="restartButton">Jugar de nuevo</button>
+        </div>
+        <div id="levelComplete" class="hidden">
+            <h1>¡NIVEL <span id="levelNumber">1</span> COMPLETADO!</h1>
+            <p>Preparando siguiente nivel...</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
